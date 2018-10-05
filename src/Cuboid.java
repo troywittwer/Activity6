@@ -1,5 +1,3 @@
-
-
 public class Cuboid<N extends Number>{
   private N length;
   private N height;
@@ -40,8 +38,6 @@ public class Cuboid<N extends Number>{
   }
 
   public double getVolume(){
-    //double x = length;
-
     return (length.doubleValue() * height.doubleValue() * breadth.doubleValue());
   }
 

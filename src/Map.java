@@ -1,8 +1,8 @@
-public class Map<T> {
-  private T key;
-  private T value;
+public class Map<K, V> {
+  private K key;
+  private V value;
 
-  Map(T key, T value){
+  Map(K key, V value){
     this.key = key;
     this.value = value;
   }
@@ -13,9 +13,9 @@ public class Map<T> {
   }
 
   public static void main(String [] args){
-    Map m1 = new Map(1989, "GT-R");
-    Map m2 = new Map(1969, "Capri");
-    Map m3 = new Map(1953, "Corvette C1");
+    Map<Integer, String> m1 = new Map(1989, "GT-R");
+    Map<Integer, String> m2 = new Map(1969, "Capri");
+    Map<Integer, String> m3 = new Map(1953, "Corvette C1");
 
     System.out.println(m1 + "\n" + m2 + "\n" + m3);
   }
